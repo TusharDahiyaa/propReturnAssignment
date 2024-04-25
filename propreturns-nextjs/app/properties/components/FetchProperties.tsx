@@ -291,7 +291,7 @@ export default function FetchProperties() {
                             className="w-full h-full object-cover rounded-t-xl md:rounded-none"
                             alt="property Image"
                             placeholder="blur"
-                            quality={40}
+                            quality={10}
                             priority
                           />
                           {property.verifiedStatus ? (
