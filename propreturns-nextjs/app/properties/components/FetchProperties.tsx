@@ -288,7 +288,7 @@ export default function FetchProperties() {
                         <div className="relative md:w-96 md:h-80">
                           <Image
                             src={property.images[0]}
-                            className="w-full h-full object-cover rounded-t-xl md:rounded-none"
+                            // className="w-full h-full object-cover rounded-t-xl md:rounded-none"
                             alt="property Image"
                             placeholder="blur"
                           />
