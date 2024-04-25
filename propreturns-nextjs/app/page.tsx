@@ -4,6 +4,11 @@ import Head from "next/head";
 
 export default function Home() {
   <Head>
+    <title>PropReturn Assignment</title>
+    <meta
+      name="description"
+      content="Assignment for propReturn NextJS Marketplace"
+    />
     <link rel="preload" href="/Commercial-Office-Space-1.webp" as="image" />
     <link
       rel="preload"
