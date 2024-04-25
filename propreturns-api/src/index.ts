@@ -37,5 +37,5 @@ mongoose
 app.use("/api/v1/properties", propRouter);
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World!");
+  res.send("Hello team, this is my backend!");
 });

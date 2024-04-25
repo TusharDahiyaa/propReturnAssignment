@@ -14,7 +14,14 @@ export default function Navbar() {
       {isMenuOpen ? (
         <div className="px-5">
           <div className="flex items-center justify-between my-5">
-            <img src="./logo_best.avif" className="w-36 h-11 mb-1" alt="" />
+            <img
+              src="./logo_best.avif"
+              className="w-36 h-11 mb-1"
+              alt=""
+              onClick={() => {
+                window.location.href = "/properties";
+              }}
+            />
             <div
               onClick={() => {
                 toggleMenu();
@@ -36,9 +43,13 @@ export default function Navbar() {
               </svg>
             </div>
           </div>
-          <p className="font-semibold text-lg my-5">Home</p>
-          <p className="font-semibold text-lg my-5">About Us</p>
-          <p className="font-semibold text-lg my-5">+91 8369003785</p>
+          <a className="font-semibold text-lg my-5" href="/properties">
+            Home
+          </a>
+          <a className="font-semibold text-lg my-5" href="#">
+            About Us
+          </a>
+          <a className="font-semibold text-lg my-5">+91 8369003785</a>
         </div>
       ) : (
         <nav className="flex items-center justify-between px-5 md:px-24 h-24 shadow-md">
@@ -68,6 +79,9 @@ export default function Navbar() {
               src="./logo_best.avif"
               className="hidden md:block w-36 h-11 mb-1"
               alt=""
+              onClick={() => {
+                window.location.href = "/properties";
+              }}
             />
             <div className="rounded-full flex items-center ms-4 gap-2 text-gray-500 shadow-xl w-60 md:w-96 h-12">
               <svg
@@ -102,36 +116,3 @@ export default function Navbar() {
     </>
   );
 }
-
-/*
-              <form
-              className="rounded-full flex items-center ms-4 gap-2 text-gray-500 shadow-xl w-60 md:w-96 h-12 bg-gray-500"
-              onSubmit={(e) => e.preventDefault()}
-            >
-              <label htmlFor="default-search" className="sr-only">
-                Search for location
-              </label>
-              <div className="flex items-center gap-2 fixed w-[60%] light: text-gray-800 dark:text-gray-400 z-50">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  className="w-6 h-6 md:w-8 md:h-8 ms-4"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                  />
-                </svg>
-                <input
-                  placeholder="Search for location..."
-                  id="default-search"
-                  className="ps-4 w-auto md:w-auto h-11 rounded-full light: border-stone-800 dark:border-stone-500"
-                  autoComplete="off"
-                />
-              </div>
-            </form>
-*/
