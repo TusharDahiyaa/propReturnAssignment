@@ -39,7 +39,7 @@ export default function FetchProperties() {
   >([]);
   const [minVal, setMinVal] = useState<number>(0);
   const [maxVal, setMaxVal] = useState<number>(25000000);
-  const [propertiesPerPage, setPropertiesPerPage] = useState<number>(10);
+  const [propertiesPerPage, setPropertiesPerPage] = useState<number>(20);
   const [totalPages, setTotalPages] = useState<number>(0);
 
   useEffect(() => {
@@ -67,12 +67,7 @@ export default function FetchProperties() {
         behavior: "smooth",
       });
       const response = await axios.get(
-        `https://propreturn-api.onrender.com/api/v1/properties/getBudgetProperties/${minVal}/${maxVal}/${currentPage}/${propertiesPerPage}`,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
+        `https://propreturn-api.onrender.com/api/v1/properties/getBudgetProperties/${minVal}/${maxVal}/${currentPage}/${propertiesPerPage}`
       );
       // Update the properties state with the fetched data
       // console.log(response.data);
@@ -293,7 +288,7 @@ export default function FetchProperties() {
                         <div className="relative md:w-96 md:h-80">
                           <Image
                             src={property.images[0]}
-                            className="w-full h-full object-cover rounded-t-xl md:rounded-none"
+                            // className="w-full h-full object-cover rounded-t-xl md:rounded-none"
                             alt="property Image"
                             placeholder="blur"
                           />
