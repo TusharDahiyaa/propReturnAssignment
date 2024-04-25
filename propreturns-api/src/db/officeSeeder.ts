@@ -244,11 +244,11 @@ function generateOfficeData() {
 // Function to generate placeholder image URLs
 function generateImageUrls() {
   const imageUrls = [
-    "/Commercial-Office-Space-1.avif",
-    "/depositphotos_235840898-stock-photo-chinese-employees-work-wework-working.avif",
-    "/depositphotos_649045064-stock-photo-corner-stylish-open-space-office.avif",
-    "/gettyimages-1145667876-612x612.avif",
-    "/photo-1571624436279-b272aff752b5.avif",
+    "/Commercial-Office-Space-1.webp",
+    "/depositphotos_235840898-stock-photo-chinese-employees-work-wework-working.webp",
+    "/depositphotos_649045064-stock-photo-corner-stylish-open-space-office.webp",
+    "/gettyimages-1145667876-612x612.webp",
+    "/photo-1571624436279-b272aff752b5.webp",
   ];
   const numImages = Math.floor(Math.random() * 5) + 1; // Random number of images (1 to 5)
   const newImages = [];
