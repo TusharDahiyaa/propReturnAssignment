@@ -291,8 +291,6 @@ export default function FetchProperties() {
                             className="w-full h-full object-cover rounded-t-xl md:rounded-none"
                             alt="property Image"
                             placeholder="blur"
-                            quality={10}
-                            priority
                           />
                           {property.verifiedStatus ? (
                             <div className="flex items-center gap-2 bg-sky-200 border-2 border-sky-500 px-2 py-2 rounded-full opacity-90 absolute top-3 left-4">
