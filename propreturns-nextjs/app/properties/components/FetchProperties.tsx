@@ -290,6 +290,7 @@ export default function FetchProperties() {
                             src={property.images[0]}
                             // className="w-full h-full object-cover rounded-t-xl md:rounded-none"
                             alt="property Image"
+                            layout="responsive"
                             placeholder="blur"
                           />
                           {property.verifiedStatus ? (
