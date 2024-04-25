@@ -1,0 +1,30 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+propreturns-api/node_modules
+propreturns-nextjs/node_modules
+.yarn/install-state.gz
+propreturns-api/dist
+
+# next.js
+propreturns-nextjs/.next/
+propreturns-nextjs/out/
+
+# production
+propreturns-nextjs/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+propreturns-api/.env
+propreturns-nextjs/.env
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
